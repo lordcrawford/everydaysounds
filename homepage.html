@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+	<head>
+	<title>HPEM BeatMaker</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="data:,">
+
+	<!-- jquery -->
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+	<link rel="stylesheet" href="homepage.css">
+	<script src="homepage.js"></script>
+
+</head>
+<body>
+	<div class = "container">
+
+		<h1>~Everyday Sounds~</h1><br><br>
+
+		<button id="play"> PLAY </button>
+		<button id="pause" pause_on = "false"> PAUSE </button>
+		<button id="stop" stop_on = "false"> STOP </button>
+
+		<button id="reset"> RESET </button>
+		<button id="export"> EXPORT </button><br><br><br>
+
+		<!-- SOUND 1 -->
+		<div id = "sound1" class = "sound_row">
+			<span class = 'sound_title'>Sound 1 – </span>
+			<input type="file" id = "sound1_input" class="file_input" accept=".mp3, .wav, .m4a">
+			<div class = "sound_steps" id = 'sound1_steps'>
+				<div class = 'step1 step step_main step_hover' data-on="false"></div>
+				<div class = 'step2 step step_main step_hover' data-on="false"></div>
+				<div class = 'step3 step step_main step_hover' data-on="false"></div>
+				<div class = 'step4 step step_main step_hover' data-on="false"></div>
+				<div class = 'step5 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step6 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step7 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step8 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step9 step step_main step_hover' data-on="false"></div>
+				<div class = 'step10 step step_main step_hover' data-on="false"></div>
+				<div class = 'step11 step step_main step_hover' data-on="false"></div>
+				<div class = 'step12 step step_main step_hover' data-on="false"></div>
+				<div class = 'step13 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step14 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step15 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step16 step step_alt step_hover' data-on="false"></div>
+			</div>
+			<audio class="audio" id = "sound1_file" controls>
+				<source src="" id="sound1_src" />
+			</audio>
+		</div>
+
+
+		<!-- SOUND 2 -->
+		<div id = "sound2" class = "sound_row">
+			<span class = 'sound_title'>Sound 2 – </span>
+			<input type="file" id = "sound2_input" class="file_input" accept=".mp3, .wav, .m4a">
+			<div class = "sound_steps" id = 'sound2_steps'>
+				<div class = 'step1 step step_main step_hover' data-on="false"></div>
+				<div class = 'step2 step step_main step_hover' data-on="false"></div>
+				<div class = 'step3 step step_main step_hover' data-on="false"></div>
+				<div class = 'step4 step step_main step_hover' data-on="false"></div>
+				<div class = 'step5 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step6 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step7 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step8 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step9 step step_main step_hover' data-on="false"></div>
+				<div class = 'step10 step step_main step_hover' data-on="false"></div>
+				<div class = 'step11 step step_main step_hover' data-on="false"></div>
+				<div class = 'step12 step step_main step_hover' data-on="false"></div>
+				<div class = 'step13 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step14 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step15 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step16 step step_alt step_hover' data-on="false"></div>
+			</div>
+			<audio class="audio" id = "sound2_file" controls>
+				<source src="" id="sound2_src" />
+			</audio>
+		</div>
+
+
+		<!-- SOUND 3 -->
+		<div id = "sound3" class = "sound_row">
+			<span class = 'sound_title'>Sound 3 – </span>
+			<input type="file" id = "sound3_input" class="file_input" accept=".mp3, .wav, .m4a">
+			<div class = "sound_steps" id = 'sound3_steps'>
+				<div class = 'step1 step step_main step_hover' data-on="false"></div>
+				<div class = 'step2 step step_main step_hover' data-on="false"></div>
+				<div class = 'step3 step step_main step_hover' data-on="false"></div>
+				<div class = 'step4 step step_main step_hover' data-on="false"></div>
+				<div class = 'step5 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step6 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step7 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step8 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step9 step step_main step_hover' data-on="false"></div>
+				<div class = 'step10 step step_main step_hover' data-on="false"></div>
+				<div class = 'step11 step step_main step_hover' data-on="false"></div>
+				<div class = 'step12 step step_main step_hover' data-on="false"></div>
+				<div class = 'step13 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step14 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step15 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step16 step step_alt step_hover' data-on="false"></div>
+			</div>
+			<audio class="audio" id = "sound3_file" controls>
+				<source src="" id="sound3_src" />
+			</audio>
+		</div>
+
+		<!-- SOUND 4 -->
+		<div id = "sound4" class = "sound_row">
+			<span class = 'sound_title'>Sound 4 – </span>
+			<input type="file" id = "sound4_input" class="file_input" accept=".mp3, .wav, .m4a">
+			<div class = "sound_steps" id = 'sound4_steps'>
+				<div class = 'step1 step step_main step_hover' data-on="false"></div>
+				<div class = 'step2 step step_main step_hover' data-on="false"></div>
+				<div class = 'step3 step step_main step_hover' data-on="false"></div>
+				<div class = 'step4 step step_main step_hover' data-on="false"></div>
+				<div class = 'step5 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step6 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step7 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step8 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step9 step step_main step_hover' data-on="false"></div>
+				<div class = 'step10 step step_main step_hover' data-on="false"></div>
+				<div class = 'step11 step step_main step_hover' data-on="false"></div>
+				<div class = 'step12 step step_main step_hover' data-on="false"></div>
+				<div class = 'step13 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step14 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step15 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step16 step step_alt step_hover' data-on="false"></div>
+			</div>
+			<audio class="audio" id = "sound4_file" controls>
+				<source src="" id="sound4_src" />
+			</audio>
+		</div>
+
+		<!-- SOUND 5 -->
+		<div id = "sound5" class = "sound_row">
+			<span class = 'sound_title'>Sound 5 – </span>
+			<input type="file" id = "sound5_input" class="file_input" accept=".mp3, .wav, .m4a">
+			<div class = "sound_steps" id = 'sound5_steps'>
+				<div class = 'step1 step step_main step_hover' data-on="false"></div>
+				<div class = 'step2 step step_main step_hover' data-on="false"></div>
+				<div class = 'step3 step step_main step_hover' data-on="false"></div>
+				<div class = 'step4 step step_main step_hover' data-on="false"></div>
+				<div class = 'step5 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step6 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step7 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step8 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step9 step step_main step_hover' data-on="false"></div>
+				<div class = 'step10 step step_main step_hover' data-on="false"></div>
+				<div class = 'step11 step step_main step_hover' data-on="false"></div>
+				<div class = 'step12 step step_main step_hover' data-on="false"></div>
+				<div class = 'step13 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step14 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step15 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step16 step step_alt step_hover' data-on="false"></div>
+			</div>
+			<audio class="audio" id = "sound5_file" controls>
+				<source src="" id="sound5_src" />
+			</audio>
+		</div>
+
+		<!-- SOUND 6 -->
+		<div id = "sound6" class = "sound_row">
+			<span class = 'sound_title'>Sound 6 – </span>
+			<input type="file" id = "sound5_input" class="file_input" accept=".mp3, .wav, .m4a">
+			<div class = "sound_steps" id = 'sound6_steps'>
+				<div class = 'step1 step step_main step_hover' data-on="false"></div>
+				<div class = 'step2 step step_main step_hover' data-on="false"></div>
+				<div class = 'step3 step step_main step_hover' data-on="false"></div>
+				<div class = 'step4 step step_main step_hover' data-on="false"></div>
+				<div class = 'step5 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step6 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step7 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step8 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step9 step step_main step_hover' data-on="false"></div>
+				<div class = 'step10 step step_main step_hover' data-on="false"></div>
+				<div class = 'step11 step step_main step_hover' data-on="false"></div>
+				<div class = 'step12 step step_main step_hover' data-on="false"></div>
+				<div class = 'step13 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step14 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step15 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step16 step step_alt step_hover' data-on="false"></div>
+			</div>
+			<audio class="audio" id = "sound6_file" controls>
+				<source src="" id="sound6_src" />
+			</audio>
+		</div>
+
+		<!-- SOUND 7 -->
+		<div id = "sound7" class = "sound_row">
+			<span class = 'sound_title'>Sound 7 – </span>
+			<input type="file" id = "sound7_input" class="file_input" accept=".mp3, .wav, .m4a">
+			<div class = "sound_steps" id = 'sound7_steps'>
+				<div class = 'step1 step step_main step_hover' data-on="false"></div>
+				<div class = 'step2 step step_main step_hover' data-on="false"></div>
+				<div class = 'step3 step step_main step_hover' data-on="false"></div>
+				<div class = 'step4 step step_main step_hover' data-on="false"></div>
+				<div class = 'step5 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step6 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step7 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step8 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step9 step step_main step_hover' data-on="false"></div>
+				<div class = 'step10 step step_main step_hover' data-on="false"></div>
+				<div class = 'step11 step step_main step_hover' data-on="false"></div>
+				<div class = 'step12 step step_main step_hover' data-on="false"></div>
+				<div class = 'step13 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step14 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step15 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step16 step step_alt step_hover' data-on="false"></div>
+			</div>
+			<audio class="audio" id = "sound7_file" controls>
+				<source src="" id="sound7_src" />
+			</audio>
+		</div>
+
+		<!-- SOUND 8 -->
+		<div id = "sound5" class = "sound_row">
+			<span class = 'sound_title'>Sound 8 – </span>
+			<input type="file" id = "sound8_input" class="file_input" accept=".mp3, .wav, .m4a">
+			<div class = "sound_steps" id = 'sound8_steps'>
+				<div class = 'step1 step step_main step_hover' data-on="false"></div>
+				<div class = 'step2 step step_main step_hover' data-on="false"></div>
+				<div class = 'step3 step step_main step_hover' data-on="false"></div>
+				<div class = 'step4 step step_main step_hover' data-on="false"></div>
+				<div class = 'step5 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step6 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step7 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step8 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step9 step step_main step_hover' data-on="false"></div>
+				<div class = 'step10 step step_main step_hover' data-on="false"></div>
+				<div class = 'step11 step step_main step_hover' data-on="false"></div>
+				<div class = 'step12 step step_main step_hover' data-on="false"></div>
+				<div class = 'step13 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step14 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step15 step step_alt step_hover' data-on="false"></div>
+				<div class = 'step16 step step_alt step_hover' data-on="false"></div>
+			</div>
+			<audio class="audio" id = "sound8_file" controls>
+				<source src="" id="sound8_src" />
+			</audio>
+		</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body{
+	background-color: #543bc4;
+}
+
+h1{
+	margin-top:  20px;
+}
+
+span {
+	color:  white;
+}
+
+.sound_row, .sound_steps, .step {
+	display: inline-block;
+}
+
+.step {
+	height: 40px;
+	width: 40px;
+	background:  black;
+}
+
+.step_main{
+	background-color: black;
+}
+
+.step_alt {
+	background-color: grey;
+}
+
+.step_clicked{
+	background-color: yellow;
+}
+
+/*not working once I toggle step*/
+.step_hover:hover {
+	background-color:  green;
+}
+
+.step_played{
+	background-color: red;
+}
+
+input {
+	width:  17%;
+	font-size: 11pt;
+}
+
+audio {
+	display: none;
+}
+
+
+#play{
+	background-color:  #4C76E3;
+	width:  100px;
+	height:  50px;
+}
+
+#pause{
+	background-color:  #EE6363;
+	width:  100px;
+	height:  50px;
+	margin-left:  10px;
+}
+
+#stop{
+	background-color:  #EE6363;
+	width:  100px;
+	height:  50px;
+	margin-left:  10px;
+}
+
+#reset{
+	margin-left:  43%;
+
+}
+
+
