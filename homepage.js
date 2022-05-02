@@ -107,9 +107,6 @@ function playEach() {
 
 	for (var i = 0, len = steps[count+1].length; i < len; i++) {
 		steps[count+1][i].play();
-
-		console.log(count);
-		console.log("play");
 	}
 	count++
 	setTimeout(playEach, 150);
