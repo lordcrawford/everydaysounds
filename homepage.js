@@ -1,3 +1,5 @@
+// Author: Lord Crawford
+
 var step1 = []
 var step2 = []
 var step3 = []
@@ -19,6 +21,7 @@ var steps = [step1,step2,step3,step4,step5,step6,step7,step8,step9,step10,step11
 var count = -1
 
 $(document).ready(function(){
+
 	$(".step").click(function(){
 		if($(this).attr("data-on") == "false"){
 			$(this).toggleClass('step_clicked')
@@ -59,6 +62,23 @@ $(document).ready(function(){
 	$("#reset").click(function(){
 		window.location.reload();
 	})
+
+	$("#help_button").click(function(){
+		if($("#help_popup").attr("showing") == "true"){
+			$("#help_popup").hide();
+			$("#help_popup").attr("showing","false");
+		}
+		else{
+			$("#help_popup").show();
+			$("#help_popup").attr("showing","true");
+		}
+	})
+
+	$("#help_exit").click(function(){
+			$("#help_popup").hide();
+	})
+
+
 
 	var input_files = document.getElementsByClassName("file_input");
 
@@ -109,7 +129,9 @@ function playEach() {
 		steps[count+1][i].play();
 	}
 	count++
-	setTimeout(playEach, 150);
+
+	// initial tempo value is at 150 milliseconds
+	setTimeout(playEach, $("#tempo_value").val());
 }
 
 

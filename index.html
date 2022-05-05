@@ -1,3 +1,5 @@
+<!-- Author: Lord Crawford -->
+
 <!doctype html>
 <html>
 	<head>
@@ -26,12 +28,54 @@
 
 		<h1>~Everyday Sounds~</h1><br><br>
 
+		<button id="help_button">Help & Instructions</button>
+
+		<div id="help_popup" showing="false">
+			<div id="help_text">
+				<h3>Help & Instructions</h2><br>
+
+				<span>What you see here is a 16-step sequencer. Sequencers allow you to program a combination of notes, 
+					rhythms, articulations and effects. Each row in this sequencer correlates to a different audio sound 
+					that you will import. <br><br>
+
+					Each column of the 'drum rack' represents a 'step'. Each step will play a combination of sounds depending
+					on which sounds are selected in the step. Once one step has played for 150 milliseconds (starter tempo, 
+					which you can change) it will continue to the next step, until all 16 are played. Then it will loop as a 
+					regular 16-step pattern. <br><br>
+
+					<u>Instructions:</u><br><br>
+				</span>
+
+				<ol>
+					<li value="1">Choose an audio file that you'd like to use</li>
+					<li>ONLY the first 100-300 milliseconds of the imported sound will be played. <br>
+					Please make sure your sound is <b>short </b>or <b>starts with audio.</b></li>
+					<li>Focus on the row of that newly added audio file. </li>
+					<li>Click on which steps you'd like the sound to play at</li>
+					<li>Hear the beat by pressing 'Play'</li>
+					<li>Continue adding :) </li>
+				</ol> <br>
+
+				<span> <u>Change Tempo:</u> Decrease speed of step sequencing from left to right <br>
+					<u>Reset:</u> Restarts sequencer table <br>
+					<u>Export:</u> Downloads a JSON file of your composition (Coming Soon)<br>
+				</span>
+
+			</div>
+			<button id="help_exit">X</button>
+		</div>
+
 		<button id="play"> PLAY </button>
 		<button id="pause" pause_on = "false"> PAUSE </button>
 		<button id="stop" stop_on = "false"> STOP </button>
 
 		<button id="reset"> RESET </button>
-		<button id="export"> EXPORT </button><br><br><br>
+		<button id="export"> EXPORT </button><br><br>
+
+		<div id="tempo_slider">
+		  <p>Change Tempo:</p>
+		  <input id = "tempo_value" data-orientation="vertical" type="range" min="100" max="300" value="150">
+	  	</div><br>
 
 		<!-- SOUND 1 -->
 		<div id = "sound1" class = "sound_row">
@@ -251,6 +295,6 @@
 			</audio>
 		</div><br><br><br><br><br>
 
-		<span>made by lord c.</span>
+		<span>made by lord crawford</span>
 </body>
 </html>

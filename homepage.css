@@ -1,9 +1,42 @@
+/*Author:  Lord Crawford */
+
 body{
 	background-color: #543bc4;
 }
 
 h1{
 	margin-top:  20px;
+}
+
+
+#help_button{
+	position: absolute;
+	right:  22%;
+	top:  4%;
+}
+
+#help_popup{
+	background-color: grey;
+	border-style: solid;
+	border-width:  10px;
+	border-color: black;
+	width:  55%;
+	display: none;
+	position: absolute;
+	top: 13%;
+	left: 22%;
+}
+
+#help_text{
+	padding:  30px;
+}
+
+#help_exit{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	width:  40px;
+	height:  40px;
 }
 
 span {
